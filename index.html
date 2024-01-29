@@ -7,23 +7,34 @@
     <!-- <script>console.log("hello")</script> -->
     <!-- <script src="script.js"></script>
     <script src="script2.js"></script> -->
-    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="bundle.js" defer></script>
     <title>Fruit App</title>
 </head>
 <body>
     <section id="inputSection">
         <form>
             <label for="fruitInput">Enter fruit Name:</label>
-            <input id="fruitInput" name="fruit" type="text" placeholder="e.g. banana">
+            <input id="fruitInput" name="fruit" type="text" placeholder="e.g. banana" required>
             <input type="submit" value="submit">
         </form>
 
     </section>
+    <!-- Trying POST request through the form -->
+   
     <section id="fruitSection">
-        
+        <ul></ul>
     </section>
     <section id="nutritionSection">
-        
+        <p></p>
     </section>
+    <section>
+        <form id="create-form">
+            <input id="fruitInput1" name="fruit1" type="text" placeholder="name of new fruit" required>
+            <input type="submit" value="Create">
+        </form>
+        <p id="message"></p>
+ </section>
 </body>
+<!-- <script src="bundle.js"></script> -->
 </html>
